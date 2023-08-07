@@ -6,9 +6,9 @@ app = Flask(__name__)
 webcam = Webcam()
 
 
-# @app.route("/")
-# def index():
-#     return render_template("index.html")
+@app.route("/")
+def index():
+    return render_template("index.html")
 
 def read_from_webcam():
     while True:
